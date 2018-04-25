@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>structures/Station.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Client.html">Client</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Client.html#login">login</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Collection.html">Collection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#array">array</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#clone">clone</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#concat">concat</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#deleteAll">deleteAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#equals">equals</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#every">every</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#filterArray">filterArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#findAll">findAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#first">first</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#firstKey">firstKey</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#keyArray">keyArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#last">last</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#lastKey">lastKey</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#map">map</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#random">random</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#randomKey">randomKey</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#reduce">reduce</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#some">some</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Collection.html#sort">sort</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="RESTManager.html">RESTManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#authLogin">authLogin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#getCookieString">getCookieString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#getCSRFToken">getCSRFToken</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#getStations">getStations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#playlistGetFragment">playlistGetFragment</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#request">request</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RESTManager.html#setCookies">setCookies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Song.html">Song</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Station.html">Station</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Station.html#getSongList">getSongList</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="User.html">User</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="User.html#getStations">getStations</a></span></li><li class="nav-heading">Events</li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Client.html#event:debug">debug</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Client.html#event:ready">ready</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">structures/Station.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const Song = require('./Song.js');
+
+class Station {
+  /**
+   * @param {Client} client The client that initiated this station.
+   * @param {Object} raw The raw data from the API.
+   */
+  constructor(client, raw) {
+    /**
+     * The client that initiated this station.
+     * @type {Client}
+     */
+    this.client = client;
+
+    /**
+     * This station's ID.
+     * @type {string}
+     */
+    this.id = raw.stationId;
+
+    /**
+     * The internal Factory Pandora ID.
+     * @type {string}
+     */
+    this.factoryId = raw.stationFactoryPandoraId;
+
+    /**
+     * This internal Pandora ID.
+     * @type {string}
+     */
+    this.pandoraId = raw.pandoraId;
+
+    /**
+     * @typedef StationArt
+     * @property {String} url The URL for this art.
+     * @property {number} size The size in pixels of this art.
+     */
+    /**
+     * The station art.
+     * @type {Array&lt;StationArt>}
+     */
+    this.art = raw.art;
+
+    /**
+     * The date this station was created.
+     * @type {date}
+     */
+    this.created = new Date(raw.dateCreated);
+
+    /**
+     * The date this station was last played.
+     * @type {date}
+     */
+    this.lastPlayed = new Date(raw.lastPlayed);
+
+    /**
+     * Whether or not this is a new station.
+     * @type {boolean}
+     */
+    this.isNew = raw.isNew;
+
+    /**
+     * Whether or not the user is allowed to
+     * delete this station.
+     * @type {boolean}
+     */
+    this.deletingAllowed = raw.allowDelete;
+
+    /**
+     * Whether or not the user is allowed to
+     * rename this station.
+     * @type {boolean}
+     */
+    this.renamingAllowed = raw.allowRename;
+
+    /**
+     * Whether or not the user is allowed to
+     * set the description of this station.
+     * @type {boolean}
+     */
+    this.editingAllowed = raw.allowEditDescription;
+
+    /**
+     * Whether or not the user is allowed to
+     * add a seed to this station.
+     * @type {boolean}
+     */
+    this.seedingAllowed = raw.allowAddSeed;
+
+    /**
+     * Whether or not this station is shared with
+     * other people.
+     * @type {boolean}
+     */
+    this.shared = raw.isShared;
+
+    /**
+     * Whether or nor the user is allowed to
+     * transform this station.
+     * @type {boolean}
+     */
+    this.transformingAllowed = raw.isTransformAllowed;
+
+    /**
+     * Whether or not this station is on demand
+     * for editorials. (?)
+     * @type {boolean}
+     */
+    this.isOnDemandEditorial = raw.isOnDemandEditorialStation;
+
+    /**
+     * Whether or not this station is for
+     * advertisers. (?)
+     * @type {boolean}
+     */
+    this.advertiser = raw.isAdvertiser;
+
+    /**
+     * Whether or not the user is allowed to
+     * shuffle this station.
+     * @type {boolean}
+     */
+    this.suffleAllowed = raw.canShuffleStation;
+
+    /**
+     * Whether or not the user is allowed to
+     * automatically share this station. (?)
+     * @type {boolean}
+     */
+    this.autoSharingAllowed = raw.canAutoshare;
+
+    /**
+     * The advertising key for this station.
+     * @type {string}
+     */
+    this.advertisingKey = raw.advertisingKey;
+
+    /**
+     * Whether or not artist audio messages are
+     * enabled for this station.
+     * @type {boolean}
+     */
+    this.artistMessages = raw.isArtistMessagesEnabled;
+
+    /**
+     * Whether or not this station is the user's
+     * thumbprint radio.
+     * @type {boolean}
+     */
+    this.thumbprint = raw.isThumbprint;
+
+    /**
+     * Whether or not this station is on shuffle
+     * mode. (?)
+     * @type {boolean}
+     */
+    this.shuffle = raw.isShuffle;
+
+    /**
+     * The genre(s) that this station is classified
+     * under.
+     * @type {Array&lt;String>}
+     */
+    this.genres = raw.genre;
+
+    /**
+     * The sponsorship for this genre. (?)
+     * @type {String}
+     */
+    this.genreSponsorship = raw.genreSponsorship;
+
+    /**
+     * The genre for the advertisements. (?)
+     * @type {String}
+     */
+    this.adGenre = raw.adGenre;
+
+    /**
+     * (?)
+     * @type {boolean}
+     */
+    this.antiTarget = raw.antiTarget;
+
+    /**
+     * The initial seed for this station.
+     * @type {Object}
+     */
+    this.initialSeed = {
+
+      /**
+       * The music id for this seed. (?)
+       * @type {String}
+       */
+      musicId: raw.initialSeed.musicId,
+
+      /**
+       * The pandora id for this seed.
+       * @type {String}
+       */
+      pandoraId: raw.initialSeed.pandoraId
+    };
+
+    /**
+     * Look, adkv is back. For all your adkv needs.
+     * @type {Object}
+     */
+    this.adkv = {
+
+      /**
+       * The artist for this adkv.
+       * @type {String}
+       */
+      artist: raw.adkv.artist,
+
+      /**
+       * The genre for this adkv.
+       * @type {String}
+       */
+      genre: raw.adkv.genre,
+
+      /**
+       * Whether or not this adkv is clean. (?)
+       * @type {string}
+       */
+      clean: raw.adkv.clean,
+
+      /**
+       * Green Cats. Maybe? (?)
+       * @type {String}
+       */
+      gcat: raw.adkv.gcat
+    };
+
+
+    /**
+     * The username of the user who made this
+     * station.
+     * @type {string}
+     */
+    this.creatorUsername = raw.creatorWebname;
+
+    /**
+     * The ID for the art of this station.
+     * @type {string}
+     */
+    this.artId = raw.artId;
+  }
+
+  /**
+   * Returns a list of songs to play.
+   * @param {boolean} isStationStart Whether or not this is the first time requested for songs from this station.
+   * @param {Object} options
+   * @param {String} options.audioFormat The audioURL return format.
+   * @returns {Promise&lt;Array&lt;Song>>}
+   */
+  async getSongList(isStationStart, options = {}) {
+    const list = await this.client.rest.playlistGetFragment(this.id, isStationStart, options);
+    const rSongs = [];
+    for (let i = 0; i &lt; list.tracks.length; i++) {
+      rSongs.push(new Song(this.client, this, list.tracks[i]));
+    }
+    return rSongs;
+  }
+}
+
+module.exports = Station;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Apr 25 2018 14:53:48 GMT-0600 (Mountain Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
